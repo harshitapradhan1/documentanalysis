@@ -1,0 +1,13 @@
+This is a test document for the document processing system.
+
+Key Points:
+1. Testing file upload functionality
+2. Testing text extraction
+3. Testing Perplexity integration
+4. Testing response formatting
+
+The system should process this text and provide:
+- Document analysis
+- Structured response
+- Action items
+- Recommendations 

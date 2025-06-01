@@ -1,0 +1,262 @@
+2025-06-01 19:57:28,409 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 19:57:28,410 - __main__ - INFO - Starting Flask application
+2025-06-01 19:57:28,413 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 19:57:28,425 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:00:58,101 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:00:58,101 - __main__ - INFO - Starting Flask application
+2025-06-01 20:01:13,857 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:01:13] "GET /health HTTP/1.1" 200 -
+2025-06-01 20:01:13,873 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 20:01:13,885 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 20:01:13,885 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 20:01:14,710 - document_processor - ERROR - API request failed with status 400: {"error":{"message":"Invalid model 'sonar-medium-online'. Permitted models can be found in the documentation at https://docs.perplexity.ai/guides/model-cards.","type":"invalid_model","code":400}}
+2025-06-01 20:01:14,710 - document_processor - ERROR - Unexpected error in process_with_perplexity: API request failed with status 400: {"error":{"message":"Invalid model 'sonar-medium-online'. Permitted models can be found in the documentation at https://docs.perplexity.ai/guides/model-cards.","type":"invalid_model","code":400}}
+2025-06-01 20:01:14,713 - __main__ - ERROR - Error processing file: API request failed with status 400: {"error":{"message":"Invalid model 'sonar-medium-online'. Permitted models can be found in the documentation at https://docs.perplexity.ai/guides/model-cards.","type":"invalid_model","code":400}}
+Traceback (most recent call last):
+  File "/Users/jaykatariya/Desktop/flowbit_harshita/app.py", line 115, in upload_file
+    perplexity_response = document_processor.process_with_perplexity(text_content, file_extension)
+  File "/Users/jaykatariya/Desktop/flowbit_harshita/document_processor.py", line 158, in process_with_perplexity
+    raise Exception(error_msg)
+Exception: API request failed with status 400: {"error":{"message":"Invalid model 'sonar-medium-online'. Permitted models can be found in the documentation at https://docs.perplexity.ai/guides/model-cards.","type":"invalid_model","code":400}}
+
+2025-06-01 20:01:14,717 - __main__ - INFO - Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 20:01:14,718 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:01:14] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-06-01 20:02:13,416 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/document_processor.py', reloading
+2025-06-01 20:02:13,693 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:02:13,693 - __main__ - INFO - Starting Flask application
+2025-06-01 20:02:13,697 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:02:13,708 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:02:14,727 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/document_processor.py', reloading
+2025-06-01 20:02:14,965 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:02:14,966 - __main__ - INFO - Starting Flask application
+2025-06-01 20:02:14,969 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:02:14,979 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:02:44,823 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:02:44] "GET /health HTTP/1.1" 200 -
+2025-06-01 20:02:44,839 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 20:02:44,847 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 20:02:44,847 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 20:03:00,265 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 20:03:00,269 - __main__ - INFO - Successfully processed with Perplexity
+2025-06-01 20:03:00,270 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 20:03:05,383 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 20:03:05,387 - __main__ - INFO - Successfully received agent response
+2025-06-01 20:03:05,388 - __main__ - INFO - Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 20:03:05,389 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:03:05] "POST /upload HTTP/1.1" 200 -
+2025-06-01 20:04:30,463 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/document_processor.py', reloading
+2025-06-01 20:04:30,733 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:04:30,733 - __main__ - INFO - Starting Flask application
+2025-06-01 20:04:30,737 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:04:30,746 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:04:31,757 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/document_processor.py', reloading
+2025-06-01 20:04:31,992 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:04:31,993 - __main__ - INFO - Starting Flask application
+2025-06-01 20:04:31,996 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:04:32,007 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:04:41,031 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:04:41] "GET /health HTTP/1.1" 200 -
+2025-06-01 20:04:41,064 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 20:04:41,074 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 20:04:41,074 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 20:04:45,495 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 20:04:45,499 - __main__ - INFO - Successfully processed with Perplexity
+2025-06-01 20:04:45,499 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 20:04:56,430 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 20:04:56,433 - __main__ - INFO - Successfully received agent response
+2025-06-01 20:04:56,434 - __main__ - INFO - Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 20:04:56,435 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:04:56] "POST /upload HTTP/1.1" 200 -
+2025-06-01 20:07:02,631 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/memory_storage.py', reloading
+2025-06-01 20:07:02,886 - __main__ - INFO - DocumentProcessor initialized successfully
+2025-06-01 20:07:02,886 - __main__ - INFO - Starting Flask application
+2025-06-01 20:07:02,890 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:07:02,899 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:07:33,169 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/app.py', reloading
+2025-06-01 20:08:17,249 - memory_storage - INFO - Memory storage initialized
+2025-06-01 20:08:17,249 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 20:08:17,250 - __main__ - INFO - Starting Flask application
+2025-06-01 20:08:17,258 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.0.0.2:3001
+2025-06-01 20:08:17,258 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 20:08:17,262 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 20:08:17,522 - memory_storage - INFO - Memory storage initialized
+2025-06-01 20:08:17,522 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 20:08:17,523 - __main__ - INFO - Starting Flask application
+2025-06-01 20:08:17,527 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 20:08:17,538 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 20:12:48,020 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:12:48] "GET /health HTTP/1.1" 200 -
+2025-06-01 20:12:48,038 - memory_storage - INFO - Added log entry: File saved temporarily: uploads/PDF.pdf
+2025-06-01 20:12:48,054 - memory_storage - INFO - Added log entry: Extracted 296 characters from file
+2025-06-01 20:12:48,054 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 20:12:53,188 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 20:12:53,190 - memory_storage - INFO - Added log entry: Successfully processed with Perplexity
+2025-06-01 20:12:53,190 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 20:13:03,426 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 20:13:03,429 - memory_storage - INFO - Added log entry: Successfully received agent response
+2025-06-01 20:13:03,430 - memory_storage - INFO - Stored document 24446031-5531-4317-bd36-46b7804ecaa0
+2025-06-01 20:13:03,431 - memory_storage - INFO - Added log entry: Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 20:13:03,432 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 20:13:03] "POST /upload HTTP/1.1" 200 -
+2025-06-01 22:02:22,351 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:02:22,351 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:02:22,352 - __main__ - INFO - Starting Flask application
+2025-06-01 22:02:22,360 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.0.102:3001
+2025-06-01 22:02:22,360 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 22:02:22,366 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:02:22,562 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:02:22,562 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:02:22,563 - __main__ - INFO - Starting Flask application
+2025-06-01 22:02:22,567 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:02:22,579 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:03:55,754 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:03:55] "GET /health HTTP/1.1" 200 -
+2025-06-01 22:03:55,766 - memory_storage - INFO - Added log entry: File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:03:55,779 - memory_storage - INFO - Added log entry: Extracted 296 characters from file
+2025-06-01 22:03:55,780 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 22:04:07,608 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 22:04:07,612 - memory_storage - INFO - Added log entry: Successfully processed with Perplexity
+2025-06-01 22:04:07,612 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 22:04:12,274 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 22:04:12,277 - memory_storage - INFO - Added log entry: Successfully received agent response
+2025-06-01 22:04:12,278 - memory_storage - INFO - Stored document d6529d52-a203-4362-a06b-0a44779b1c2b
+2025-06-01 22:04:12,279 - memory_storage - INFO - Added log entry: Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 22:04:12,280 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:04:12] "POST /upload HTTP/1.1" 200 -
+2025-06-01 22:08:29,028 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/json_memory.py', reloading
+2025-06-01 22:08:29,079 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:08:29,326 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:08:29,326 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:08:29,327 - __main__ - INFO - Starting Flask application
+2025-06-01 22:08:29,333 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:08:29,343 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:09:06,507 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:09:06] "GET /health HTTP/1.1" 200 -
+2025-06-01 22:09:06,519 - memory_storage - INFO - Added log entry: File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:09:06,531 - memory_storage - INFO - Added log entry: Extracted 296 characters from file
+2025-06-01 22:09:06,531 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 22:09:17,866 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 22:09:17,869 - memory_storage - INFO - Added log entry: Successfully processed with Perplexity
+2025-06-01 22:09:17,869 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 22:09:21,879 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 22:09:21,882 - memory_storage - INFO - Added log entry: Successfully received agent response
+2025-06-01 22:09:21,883 - memory_storage - INFO - Stored document 4c2942f6-d149-4a53-bbce-35c4db3f91c7
+2025-06-01 22:09:21,884 - memory_storage - INFO - Added log entry: Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 22:09:21,885 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:09:21] "POST /upload HTTP/1.1" 200 -
+2025-06-01 22:10:57,985 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/json_memory.py', reloading
+2025-06-01 22:10:58,046 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:10:58,292 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:10:58,293 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:10:58,294 - __main__ - INFO - Starting Flask application
+2025-06-01 22:10:58,298 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:10:58,308 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:12:30,467 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/shared_memory.py', reloading
+2025-06-01 22:12:30,521 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:12:30,729 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:12:30,729 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:12:30,731 - __main__ - INFO - Starting Flask application
+2025-06-01 22:12:30,735 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:12:30,745 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:12:34,782 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/shared_memory.py', reloading
+2025-06-01 22:12:34,836 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:12:35,034 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:12:35,034 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:12:35,035 - __main__ - INFO - Starting Flask application
+2025-06-01 22:12:35,038 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:12:35,048 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:12:37,077 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/shared_memory.py', reloading
+2025-06-01 22:12:37,147 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:12:37,338 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:12:37,338 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:12:37,339 - __main__ - INFO - Starting Flask application
+2025-06-01 22:12:37,342 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:12:37,352 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:13:44,111 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/json_memory.py', reloading
+2025-06-01 22:13:44,168 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:13:44,365 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:13:44,365 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:13:44,366 - __main__ - INFO - Starting Flask application
+2025-06-01 22:13:44,369 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:13:44,380 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:14:18,385 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:14:18] "GET /health HTTP/1.1" 200 -
+2025-06-01 22:14:18,409 - memory_storage - INFO - Added log entry: File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:14:18,423 - memory_storage - INFO - Added log entry: Extracted 296 characters from file
+2025-06-01 22:14:18,424 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 22:14:23,665 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 22:14:23,669 - memory_storage - INFO - Added log entry: Successfully processed with Perplexity
+2025-06-01 22:14:23,669 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 22:14:34,495 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 22:14:34,498 - memory_storage - INFO - Added log entry: Successfully received agent response
+2025-06-01 22:14:34,498 - memory_storage - INFO - Stored document 78067774-d1b4-4821-ad29-94fa924e5521
+2025-06-01 22:14:34,499 - memory_storage - INFO - Added log entry: Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 22:14:34,500 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:14:34] "POST /upload HTTP/1.1" 200 -
+2025-06-01 22:15:46,851 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/test_memory.py', reloading
+2025-06-01 22:15:46,906 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:15:47,163 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:15:47,163 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:15:47,165 - __main__ - INFO - Starting Flask application
+2025-06-01 22:15:47,169 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:15:47,180 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:25:06,261 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:25:06] "GET /health HTTP/1.1" 200 -
+2025-06-01 22:25:06,270 - memory_storage - INFO - Added log entry: File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:25:06,282 - memory_storage - INFO - Added log entry: Extracted 296 characters from file
+2025-06-01 22:25:06,282 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 22:25:17,231 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 22:25:17,236 - memory_storage - INFO - Added log entry: Successfully processed with Perplexity
+2025-06-01 22:25:17,236 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 22:25:28,556 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 22:25:28,559 - memory_storage - INFO - Added log entry: Successfully received agent response
+2025-06-01 22:25:28,559 - memory_storage - INFO - Stored document e9b5fed5-87ac-4316-b82a-d5fc93feedcd
+2025-06-01 22:25:28,560 - memory_storage - INFO - Added log entry: Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 22:25:28,561 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 22:25:28] "POST /upload HTTP/1.1" 200 -
+2025-06-01 22:58:19,566 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:58:19,567 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:58:19,567 - __main__ - INFO - Starting Flask application
+2025-06-01 22:58:19,573 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.0.102:3001
+2025-06-01 22:58:19,573 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-01 22:58:19,577 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:58:19,697 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:58:19,697 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:58:19,698 - __main__ - INFO - Starting Flask application
+2025-06-01 22:58:19,700 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:58:19,708 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:59:14,218 - werkzeug - INFO -  * Detected change in '/Users/jaykatariya/Desktop/flowbit_harshita/app.py', reloading
+2025-06-01 22:59:14,279 - werkzeug - INFO -  * Restarting with stat
+2025-06-01 22:59:14,463 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:59:14,463 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:59:14,464 - __main__ - INFO - Starting Flask application
+2025-06-01 22:59:14,467 - werkzeug - WARNING -  * Debugger is active!
+2025-06-01 22:59:14,475 - werkzeug - INFO -  * Debugger PIN: 478-905-816
+2025-06-01 22:59:37,016 - memory_storage - INFO - Memory storage initialized
+2025-06-01 22:59:37,016 - __main__ - INFO - DocumentProcessor and MemoryStorage initialized successfully
+2025-06-01 22:59:37,017 - __main__ - INFO - Starting Flask application
+2025-06-01 22:59:51,277 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:59:51,292 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 22:59:51,292 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 22:59:55,969 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 22:59:55,980 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 22:59:55,981 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 23:00:02,526 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 23:00:02,529 - __main__ - INFO - Successfully processed with Perplexity
+2025-06-01 23:00:02,529 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 23:00:06,738 - __main__ - INFO - File saved temporarily: uploads/PDF.pdf
+2025-06-01 23:00:06,750 - __main__ - INFO - Extracted 296 characters from file
+2025-06-01 23:00:06,750 - document_processor - INFO - Sending request to Perplexity API
+2025-06-01 23:00:08,348 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 23:00:08,350 - __main__ - INFO - Successfully received agent response
+2025-06-01 23:00:08,351 - memory_storage - INFO - Stored document 6d5780d8-eff1-4251-9d5e-046a02bf72e7
+2025-06-01 23:00:08,352 - __main__ - INFO - Cleaned up temporary file: uploads/PDF.pdf
+2025-06-01 23:00:08,352 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 23:00:08] "POST /upload HTTP/1.1" 200 -
+2025-06-01 23:00:08,757 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 23:00:08,760 - __main__ - INFO - Successfully processed with Perplexity
+2025-06-01 23:00:08,760 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 23:00:10,644 - document_processor - INFO - Successfully received response from Perplexity API
+2025-06-01 23:00:10,647 - __main__ - INFO - Successfully processed with Perplexity
+2025-06-01 23:00:10,647 - document_processor - INFO - Sending follow-up request to Perplexity API
+2025-06-01 23:00:14,057 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 23:00:14,060 - __main__ - INFO - Successfully received agent response
+2025-06-01 23:00:14,061 - memory_storage - INFO - Stored document f8c01b9c-fd96-4912-84e4-f2009316ce37
+2025-06-01 23:00:14,062 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 23:00:14] "POST /upload HTTP/1.1" 200 -
+2025-06-01 23:00:16,738 - document_processor - INFO - Successfully received follow-up response from Perplexity API
+2025-06-01 23:00:16,741 - __main__ - INFO - Successfully received agent response
+2025-06-01 23:00:16,741 - memory_storage - INFO - Stored document e6b7008c-d209-421f-87bc-14b0a2c1d21a
+2025-06-01 23:00:16,742 - werkzeug - INFO - 127.0.0.1 - - [01/Jun/2025 23:00:16] "POST /upload HTTP/1.1" 200 -
